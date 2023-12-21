@@ -3,7 +3,7 @@ const url ="https://api.weatherapi.com/v1/current.json?key=dde7734825874bc8b3f11
 
 export const getWeatherData= async (city)=>{
 
-    const respone = await fetch(`${url}&q=${city}&aqi=yes`)
+    const respone = await fetch(`${url}&q=${city}&aqi='yes'`)
     return await respone.json()
 }   
 

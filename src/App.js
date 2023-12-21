@@ -1,20 +1,19 @@
 
 import './App.css';
 import Card from './componenets/Card';
-import Input from './componenets/Input';
 import Button from './componenets/Button';
 // import { getWeatherData } from './api/index.jsx';
-import { useWaether } from './context/Weather';
+import { useWaether } from './context/Weather.jsx';
 
 function App() {
   const Weather = useWaether();
+  console.log(Weather)
 
   return (
 <>
-<Input/>
-<Button onClick={Weather.fetchdata} value="search"/>
-<Card/>
+{/* <Input/> */}
 
+<Card/>
 </>
   );
 }

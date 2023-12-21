@@ -16,7 +16,7 @@ export const WeatherProvider =(props)=>{
         const response = await getWeatherData(searchCity)
         setData(response)
     }
-    return <weatherContext.Provider value={{searchCity,setSearchCity,data,fetchData}}>
+    return <weatherContext.Provider value={{searchCity,data,setSearchCity,fetchData}}>
         {props.children}
     </weatherContext.Provider>
 }

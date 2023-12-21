@@ -2,13 +2,8 @@ import React from 'react'
 
 function Button(props) {
   return (
-    <>
-    <button
-placeholder={props.value}
->
-    {props.value}
-    </button>
-    </>
+    <button  className="btn" onClick={props.onClick}>{props.value}</button>
+
   )
 }
 
