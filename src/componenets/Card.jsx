@@ -10,7 +10,8 @@ const Card = () => {
   const formattedDate = dayTime.toLocaleDateString('en-US',options);
   return (
     <>
-      <div className="min-h-screen  items-center justify-center">
+	<div className="flex justify-center items-center w-full h-screen">
+      <div className=" flex flex-col items-center justify-center border border-gray-300 shadow-lg p-4 rounded-lg">
         <div className="flex flex-col bg-white rounded p-4 w-full max-w-xs">
           <div className="font-bold text-xl">{weather.data?.location?.name}</div>
           <div className="text-sm text-gray-500">{formattedDate}</div>
@@ -39,9 +40,12 @@ const Card = () => {
             </div>
           </div>
         </div>
+		<div className="flex">
 		<Input/>
 		<Button onClick={weather.fetchData} value="search"/>
+		</div>
       </div>
+	  </div>
     </>
   );
 };
