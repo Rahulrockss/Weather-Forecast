@@ -36,6 +36,6 @@
     transform: rotate(360deg);
   }
 }
-/* html{
-  background-color: #282c34;
-} */
+html{
+  background-image: url('../public/abstract-digital-grid-black-background.jpg');
+}

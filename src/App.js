@@ -1,9 +1,10 @@
 
 import './App.css';
-import Card from './componenets/Card';
-import Button from './componenets/Button';
+import Card from './componenets/Card.jsx';
+import BackgroundImage from './componenets/BackgroundImage.jsx'
 // import { getWeatherData } from './api/index.jsx';
 import { useWaether } from './context/Weather.jsx';
+
 
 function App() {
   const Weather = useWaether();
@@ -11,8 +12,7 @@ function App() {
 
   return (
 <>
-{/* <Input/> */}
-
+<BackgroundImage/>
 <Card/>
 </>
   );
